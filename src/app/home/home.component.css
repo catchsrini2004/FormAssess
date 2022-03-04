@@ -1,0 +1,28 @@
+.is-invalid {
+
+    border: 2px solid red;;
+}
+
+
+label {
+    padding-right: 10px;;
+    width:100px; 
+    display:inline-block;
+    color: dodgerblue;
+}
+.form-control { 
+    padding-right: 10px;;
+    width:200px; 
+    color: black;
+    font-size: large;
+}
+.form-group {
+    padding: 20px;
+}  
+
+.btn {
+    padding-right: 10px;;
+    width:200px; 
+    color: dodgerblue;
+}
+

@@ -1,0 +1,37 @@
+<div  >
+    <form [formGroup]="myform"  >
+      <div class="form-group">
+        <label>Field 1</label>
+        <input
+          type="text"
+          formControlName="field1"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f.field1.errors }"
+        />
+        <div *ngIf="submitted && f.field1.errors" class="invalid-feedback">
+          <div style="color: red;" *ngIf="f.field1.errors.required">Field 1 is required</div>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label>Ip Address</label>
+        <input
+          type="text"
+          formControlName="ipAddress"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f.ipAddress.errors }"
+        />
+        <div *ngIf="submitted && f.ipAddress.errors" >
+          <div style="color: red;" *ngIf="f.ipAddress.errors.required">Ipaddress is required</div>
+      </div>
+      <div *ngIf="submitted && f.ipAddress.errors" >
+        <div style="color: red;" *ngIf="f.ipAddress.errors.pattern">Invalid format</div>
+    </div>
+      </div>
+  
+      <div class="form-group">
+        <button class="btn" (click)="onSubmit()" >Next</button>       
+      </div>
+    </form>
+  </div>
+  
