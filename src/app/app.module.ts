@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { WssDataOutputComponent } from './wss-data-output/wss-data-output.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    WssDataOutputComponent
+    WssDataOutputComponent,
+    LoginpageComponent
   ],
   imports: [
     BrowserModule,
